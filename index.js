@@ -50,6 +50,6 @@ SassCompiler.prototype.updateCache = function(includePaths, destDir) {
       }
     }
     _.merge(sassOptions, self.sassOptions)
-    sass.renderSync(sassOptions)
+    sass.render(sassOptions)
   })
 }
