@@ -42,7 +42,6 @@ SassCompiler.prototype.updateCache = function(includePaths, destDir) {
       dest: destFile,
       success: function(result) {
         resolve(this)
-        })
       },
       error: function(err) {
         reject(err)
