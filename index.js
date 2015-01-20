@@ -40,6 +40,7 @@ SassCompiler.prototype.updateCache = function(includePaths, destDir) {
       file: includePathSearcher.findFileSync(self.inputFile, includePaths),
       includePaths: includePaths,
       outFile: destFile,
+      dest: destFile,
       success: function(result) {
         fs.writeFile(destFile, result.css, function(err) {
           err ? reject(err) : resolve(this)
